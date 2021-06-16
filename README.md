@@ -49,3 +49,11 @@ Os retornos possíveis são:
 * 400 - Bad Request: Campos obrigatórios não foram informados ou o Json recebido está mal formatado
 * 500 - Server Error: A API quebrou devido a um erro desconhecido
 * 404 - Not Found: O recurso solicitado não foi encontrado
+
+## Logs
+Para análise mais detalhada, foi implementado logs da aplicação, estes gravados em ```C:/tmp```.
+Os registros do log são:
+* Subida da aplicação
+* Corpo de envio e resposta
+* Stack trace em casos de erros de formatação de Json
+* Stack trace em casos de erros com status 500
