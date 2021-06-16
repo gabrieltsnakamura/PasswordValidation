@@ -34,7 +34,7 @@ Construir uma aplicação que exponha uma api web que valide se uma senha é vá
 Envio:
 ```Json
 {
-  "password": "Ab123$aw@e2"
+  "password": "Ab123$aw@e"
 }
 ```
 Retorno:
