@@ -13,7 +13,7 @@ public class UserServiceImpl implements UserService {
 	@Override
 	public boolean validateUser(String password) {
 		
-		String regex = "^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z])(?=.*[!@#$%^&*()\\-+])(?!.*(.).*\\1.*).{8,}$";
+		String regex = "^(?=.*\\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z])(?=.*[!@#$%^&*()\\-+])(?!.*(.).*\\1.*).{9,}$";
 		Pattern p = Pattern.compile(regex);
 		Matcher m = p.matcher(password);
 		return m.matches();
